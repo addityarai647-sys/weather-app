@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="Weather-Hub">
+
+        <h1>Weather-Hub 🌤️</h1>
+
+        <!-- Search Box -->
+        <div class="search-box">
+
+            <input 
+                type="text" 
+                id="cityInput" 
+                placeholder="Enter city name"
+
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+            <button id="locationBtn">📍 My Location</button>
+            <p id="loading">⏳ Loading weather...</p>
+
+        </div>
+
+
+        <!-- Weather Card -->
+        <div class="weather-card" id="weatherCard">
+
+            <h2 id="cityName">Delhi</h2>
+
+            <div id="weatherIcon">
+                🌤️
+            </div>
+
+            <h3 id="temperature">25°C</h3>
+
+            <p id="condition">Clear Sky</p>
+
+
+            <!-- Weather Details -->
+            <div class="weather-details">
+
+              <div class="weather-details">
+
+    <div class="detail-box">
+        <span>💧</span>
+        <p>Humidity</p>
+        <strong id="humidity">60%</strong>
+    </div>
+
+    <div class="detail-box">
+        <span>💨</span>
+        <p>Wind</p>
+        <strong id="wind">10 km/h</strong>
+    </div>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
